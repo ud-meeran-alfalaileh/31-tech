@@ -24,7 +24,7 @@ class GoogleMapWidgetState extends State<GoogleMapWidget> {
 //add custom marker to the map
   Future<void> addCustomIcon() async {
     BitmapDescriptor.fromAssetImage(
-      const ImageConfiguration(size: Size(200, 100)),
+      const ImageConfiguration(size: Size(180, 80)),
       "assets/img/car_map.png",
     ).then(
       (icon) {

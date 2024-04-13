@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:tech_31/src/config/theme/theme.dart';
-import 'package:tech_31/src/feature/navbar/view/main/navbar_page.dart';
+import 'package:tech_31/src/feature/splash_screen/view/splash_screen.dart';
 import 'package:tech_31/src/feature/weather/controller/weather_controller.dart';
 
 Future<void> main() async {
@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       theme: AppTheme.light,
       debugShowCheckedModeBanner: false,
-      home: const NavBarPage(),
+      home: SplashScreen(),
       initialBinding: BindingsBuilder(() {
         Get.lazyPut<WeatherController>(() => WeatherController());
       }),
